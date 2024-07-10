@@ -73,8 +73,11 @@
                         ?>
                         <li><strong>Cliente</strong>: <?php echo get_the_excerpt(); ?></li>
                         <li><strong>Fecha del Proyecto</strong>: <?php echo get_the_date('d F, Y'); ?></li>
-                        <li><strong>URL del Proyecto</strong>: <a href="<?php echo esc_url(get_post_meta(get_the_ID(), 'project_url', true)); ?>" target="_blank"><?php echo esc_url(get_post_meta(get_the_ID(), 'project_url', true)); ?></a></li>
+                        <li><strong>URL del Proyecto</strong>: <a href=""></a></li>
                     </ul>
+                    <div class="d-flex">
+                        <a style="color: white;" href="#" class="btn btn-info w-100 text-center text-uppercase">Cotizar</a>
+                    </div>
                 </div>
                 <div class="portfolio-description">
                     <h2><?php the_title(); ?></h2>
