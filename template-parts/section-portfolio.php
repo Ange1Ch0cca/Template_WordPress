@@ -2,9 +2,9 @@
     <div class="container">
 
         <div class="section-title">
-          <span>Portafolio</span>
-          <h2>Portafolio</h2>
-          <p>Explora nuestro trabajo destacado en desarrollo de software, diseño web y gráfico digital. Descubre cómo podemos ayudarte a alcanzar tus objetivos.</p>
+            <span>Portafolio</span>
+            <h2>Portafolio</h2>
+            <p>Explora nuestro trabajo destacado en desarrollo de software, diseño web y gráfico digital. Descubre cómo podemos ayudarte a alcanzar tus objetivos.</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
@@ -44,25 +44,25 @@
                     }
             ?>
                     <div class="col-lg-4 col-md-6 portfolio-item <?php echo esc_attr($portfolio_filter_class); ?>">
-                        <div class="portfolio-img">
-                            <?php 
-                            // Mostrar la imagen destacada del producto
-                            echo woocommerce_get_product_thumbnail('medium', array('class' => 'img-fluid'));
-                            ?>
-                        </div>
-                        <div class="portfolio-info">
-                            <h4><?php the_title(); ?></h4>
-                            <p>
+                        <a href="<?php the_permalink(); ?>" class="portfolio-link">
+                            <div class="portfolio-img">
                                 <?php 
-                                if ($product_categories && !is_wp_error($product_categories)) {
-                                    $first_category = $product_categories[0];
-                                    echo esc_html($first_category->name);
-                                }
+                                // Mostrar la imagen destacada del producto
+                                echo woocommerce_get_product_thumbnail('medium', array('class' => 'img-fluid'));
                                 ?>
-                            </p>
-                            <a href="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="<?php the_title(); ?>"><i class="bx bx-plus"></i></a>
-                            <a href="<?php the_permalink(); ?>" class="details-link" title="<?php _e('More Details', 'your-text-domain'); ?>"><i class="bx bx-link"></i></a>
-                        </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4><?php the_title(); ?></h4>
+                                <p>
+                                    <?php 
+                                    if ($product_categories && !is_wp_error($product_categories)) {
+                                        $first_category = $product_categories[0];
+                                        echo esc_html($first_category->name);
+                                    }
+                                    ?>
+                                </p>
+                            </div>
+                        </a>
                     </div>
             <?php
                 endwhile;

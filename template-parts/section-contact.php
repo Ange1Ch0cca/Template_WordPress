@@ -62,7 +62,7 @@
               </div>
               <div class="my-3">
                 <div class="loading">Cargando</div>
-                <div class="error-message"></div>que no 
+                <div class="error-message"></div>
                 <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
               </div>
               <div class="text-center"><button type="submit">Enviar Mensaje</button></div>

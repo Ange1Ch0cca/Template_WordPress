@@ -29,12 +29,27 @@
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet">
 
     <?php wp_head(); ?>
+
+    <style>
+        /* Header Background for Single Page */
+        .header-bg {
+            background-color: #333; /* O el color que desees para el fondo */
+            transition: background-color 0.3s;
+        }
+
+        /* Header Transparent */
+        .header-transparent {
+            background-color: transparent;
+            transition: background-color 0.3s;
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+    <header id="header" class="fixed-top d-flex justify-content-center align-items-center 
+        <?php if (is_single()) { echo 'header-bg'; } else { echo 'header-transparent'; } ?>">
 
         <nav id="navbar" class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -51,7 +66,6 @@
                     }
                     ?>
                 </a>
-
 
                 <!-- Mobile Toggle Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,8 +90,6 @@
         </nav><!-- .navbar -->
 
     </header><!-- End Header -->
-
-    
 
     <?php wp_footer(); ?>
 </body>
