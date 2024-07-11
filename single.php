@@ -92,7 +92,7 @@
                         ?>
                         <li><strong>URL del Proyecto</strong>:
                             <?php if ($project_url) : ?>
-                                <a href="<?php echo esc_url($project_url); ?>"><?php echo esc_html($project_url); ?></a>
+                                <a target="_blank" href="<?php echo esc_url($project_url); ?>"><?php echo esc_html($project_url); ?></a>
                             <?php else : ?>
                                 <span>No se proporcionó ninguna URL</span>
                             <?php endif; ?>
