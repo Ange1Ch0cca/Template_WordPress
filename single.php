@@ -3,9 +3,12 @@
 <style>
     /* Barra gris encima de la sección de Breadcrumbs */
     .grey-bar {
-        background-color: #f2f2f2; /* Gris claro */
-        height: 20px; /* Altura de la barra */
-        width: 100%; /* Ancho completo */
+        background-color: #f2f2f2;
+        /* Gris claro */
+        height: 20px;
+        /* Altura de la barra */
+        width: 100%;
+        /* Ancho completo */
     }
 
     /* Centrar el botón en la tarjeta */
@@ -74,33 +77,39 @@
                         <li><strong>Cliente</strong>: <?php echo get_the_excerpt(); ?></li>
                         <?php
                         // Obtener el objeto del producto
-                        $product = wc_get_product( get_the_ID() );
+                        $product = wc_get_product(get_the_ID());
 
                         // Obtener el valor del atributo "project_url"
-                        $project_url = $product->get_attribute( 'project_url' );
+                        $project_url = $product->get_attribute('project_url');
 
                         // Obtener la fecha de publicación del producto
                         $publication_date = get_the_date('d F, Y', $product->get_id());
                         ?>
                         <li><strong>Fecha del Proyecto</strong>: <?php echo esc_html($publication_date); ?></li>
                         <?php
-                        // Obtener el objeto del producto
-                        $product = wc_get_product( get_the_ID() );
-
                         // Obtener el valor del atributo "project_url"
-                        $project_url = $product->get_attribute( 'project_url' );
+                        $project_url = $product->get_attribute('project_url');
                         ?>
-                        <li><strong>URL del Proyecto</strong>: 
-                            <?php if ( $project_url ) : ?>
-                                <a href="<?php echo esc_url( $project_url ); ?>"><?php echo esc_html( $project_url ); ?></a>
+                        <li><strong>URL del Proyecto</strong>:
+                            <?php if ($project_url) : ?>
+                                <a href="<?php echo esc_url($project_url); ?>"><?php echo esc_html($project_url); ?></a>
                             <?php else : ?>
                                 <span>No se proporcionó ninguna URL</span>
                             <?php endif; ?>
                         </li>
-
                     </ul>
                     <div class="d-flex">
-                        <a style="color: white;" href="#" class="btn btn-info w-100 text-center text-uppercase">Cotizar</a>
+                        <?php
+                        // Obtener el nombre del producto
+                        $product_name = $product->get_name();
+
+                        // Construir el mensaje de WhatsApp
+                        $whatsapp_message = "Hola, quiero cotizar mi proyecto. Me interesa el diseño del portafolio: " . $product_name;
+
+                        // Construir el enlace de WhatsApp
+                        $whatsapp_link = "https://api.whatsapp.com/send?phone=+51906829934&text=" . urlencode($whatsapp_message);
+                        ?>
+                        <a target="_blank" style="color: white;" href="<?php echo esc_url($whatsapp_link); ?>" class="btn btn-info w-100 text-center text-uppercase"><i class='bx bxl-whatsapp'></i>Cotizar para mi Negocio</a>
                     </div>
                 </div>
                 <div class="portfolio-description">
@@ -108,6 +117,7 @@
                     <p><?php the_content(); ?></p>
                 </div>
             </div>
+
         </div>
     </div>
     <hr>
@@ -146,7 +156,7 @@
                 if ($related_query->have_posts()) {
                     while ($related_query->have_posts()) {
                         $related_query->the_post();
-                        ?>
+            ?>
                         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                             <div class="card" style="width: 100%;">
                                 <?php if (has_post_thumbnail()) { ?>
@@ -161,7 +171,7 @@
                                 </div>
                             </div>
                         </div>
-                        <?php
+            <?php
                     }
                     wp_reset_postdata();
                 } else {
