@@ -4,11 +4,11 @@
       <h3><?php bloginfo('name'); ?></h3>
       <p><?php bloginfo('description'); ?></p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-whatsapp"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-telegram"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=51906829934&text=Hola%2C%20estoy%20interesado%20en%20desarrollar%20un%20proyecto%20digital.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20una%20p%C3%A1gina%20web%20o%20sistema%20personalizado%3F%20Espero%20su%20respuesta%2C%20gracias." class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a target="_blank" href="https://www.facebook.com/AngelChoccaRamos1" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/angel.choccaramos/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a target="_blank" href="https://github.com/Ange1Ch0cca" class="github"><i class="bx bxl-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/angel-chocca-ramos-b0a78b275/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>AngelChocca</span></strong>. Todos los Derechos Reservados

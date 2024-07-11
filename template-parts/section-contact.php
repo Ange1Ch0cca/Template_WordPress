@@ -18,11 +18,11 @@
                   <i class="bx bx-share-alt"></i>
                   <h3>Nuestras Redes</h3>
                   <div class="social-links">
-                    <a href="#" class="twitter"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="telegram"><i class="bi bi-telegram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=51906829934&text=Hola%2C%20estoy%20interesado%20en%20desarrollar%20un%20proyecto%20digital.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20una%20p%C3%A1gina%20web%20o%20sistema%20personalizado%3F%20Espero%20su%20respuesta%2C%20gracias." class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/AngelChoccaRamos1" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/angel.choccaramos/" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a target="_blank" href="https://github.com/Ange1Ch0cca" class="github"><i class="bi bi-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/angel-chocca-ramos-b0a78b275/" class="linkedin"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -30,14 +30,14 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Correo</h3>
-                  <p>contact@example.com</p>
+                  <p>angelchoccaramos@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Teléfono</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>+51 906 829 934</p>
                 </div>
               </div>
             </div>
