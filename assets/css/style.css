@@ -1126,9 +1126,11 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #04afbd;
-  color: #fff;
+  background: #fff;
+  color: #04afbd;
+  border: 2px solid #04afbd; /* Agrega esta línea para el borde rojo */
 }
+
 
 /*--------------------------------------------------------------
 # Contact Me

@@ -8,7 +8,7 @@
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
-            <li data-filter="*" class="filter-active"><?php _e('Todo', 'your-text-domain'); ?></li>
+            <li data-filter="*" class="filter-active"><?php _e('Todo', ''); ?></li>
             <?php
             // Obtener todas las categorías de los productos
             $product_categories = get_terms(array(
@@ -69,7 +69,7 @@
                 wp_reset_postdata();
             else :
             ?>
-                <p><?php _e('No se encontraron productos', 'your-text-domain'); ?></p>
+                <p><?php _e('No se encontraron productos', ''); ?></p>
             <?php endif; ?>
         </div>
     </div>
