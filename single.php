@@ -167,7 +167,7 @@
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title"><?php the_title(); ?></h5>
                                     <p class="card-text"><?php the_content(); ?></p>
-                                    <a href="<?php the_permalink(); ?>" class="btn btn-info mt-auto">Ver más</a>
+                                    <a href="<?php the_permalink(); ?>" class="btn btn-outline-dark mt-auto">Ver más</a>
                                 </div>
                             </div>
                         </div>
