@@ -72,8 +72,32 @@
                         }
                         ?>
                         <li><strong>Cliente</strong>: <?php echo get_the_excerpt(); ?></li>
-                        <li><strong>Fecha del Proyecto</strong>: <?php echo get_the_date('d F, Y'); ?></li>
-                        <li><strong>URL del Proyecto</strong>: <a href=""></a></li>
+                        <?php
+                        // Obtener el objeto del producto
+                        $product = wc_get_product( get_the_ID() );
+
+                        // Obtener el valor del atributo "project_url"
+                        $project_url = $product->get_attribute( 'project_url' );
+
+                        // Obtener la fecha de publicación del producto
+                        $publication_date = get_the_date('d F, Y', $product->get_id());
+                        ?>
+                        <li><strong>Fecha del Proyecto</strong>: <?php echo esc_html($publication_date); ?></li>
+                        <?php
+                        // Obtener el objeto del producto
+                        $product = wc_get_product( get_the_ID() );
+
+                        // Obtener el valor del atributo "project_url"
+                        $project_url = $product->get_attribute( 'project_url' );
+                        ?>
+                        <li><strong>URL del Proyecto</strong>: 
+                            <?php if ( $project_url ) : ?>
+                                <a href="<?php echo esc_url( $project_url ); ?>"><?php echo esc_html( $project_url ); ?></a>
+                            <?php else : ?>
+                                <span>No se proporcionó ninguna URL</span>
+                            <?php endif; ?>
+                        </li>
+
                     </ul>
                     <div class="d-flex">
                         <a style="color: white;" href="#" class="btn btn-info w-100 text-center text-uppercase">Cotizar</a>

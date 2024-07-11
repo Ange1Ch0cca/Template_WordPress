@@ -12,71 +12,69 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="box">
-              <h3>Plan Básico</h3>
-              <h4><sup>S/</sup> 2,000<span> / Pago Único</span></h4>
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
               <ul>
-                <li>Desarrollo de sitio web básico (3-5 páginas)</li>
-                <li>Diseño responsivo (adaptado a móviles)</li>
-                <li>Integración con redes sociales</li>
-                <li>Formulario de contacto</li>
-                <li>Optimización básica para SEO</li>
-                <li>Integración con Google Maps</li>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contratar</a>
+                <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <h3>Plan Estándar</h3>
-              <h4><sup>S/</sup> 4,500<span> / Pago Único</span></h4>
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
               <ul>
-                <li>Desarrollo de sitio web estándar (hasta 10 páginas)</li>
-                <li>Diseño personalizado y moderno</li>
-                <li>Funcionalidades adicionales como galería de imágenes, sliders, etc.</li>
-                <li>Blog integrado</li>
-                <li>SEO básico</li>
-                <li>Integración con Google Maps y redes sociales</li>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contratar</a>
+                <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div class="box">
-              <h3>Plan Premium</h3>
-              <h4><sup>S/</sup> 9,000<span> / Pago Único</span></h4>
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
               <ul>
-                <li>Desarrollo de sitio web premium (e-commerce, portal corporativo)</li>
-                <li>Diseño avanzado y personalizado</li>
-                <li>Integración avanzada con redes sociales</li>
-                <li>Optimización avanzada para SEO</li>
-                <li>Integración con sistemas de pago y envío</li>
-                <li>Soporte extendido y entrenamiento para el cliente</li>
-                <li>Integración con Google Maps y funcionalidades adicionales como chat en vivo</li>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contratar</a>
+                <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div class="box">
-              <h3>Plan Personalizado</h3>
-              <h4><sup>S/</sup> Según Cotización<span> / Pago Único</span></h4>
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
               <ul>
-                <li>Desarrollo de software a medida o página web con funcionalidades específicas</li>
-                <li>Requerimientos específicos del cliente</li>
-                <li>Consultoría y análisis detallado</li>
-                <li>Diseño y desarrollo de funcionalidades avanzadas según necesidad</li>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Solicitar Cotización</a>
+                <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
           </div>

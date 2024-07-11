@@ -68,7 +68,7 @@
                 </a>
 
                 <!-- Mobile Toggle Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -80,7 +80,7 @@
                         'theme_location' => 'primary',
                         'depth' => 2,
                         'container' => false,
-                        'menu_class' => 'navbar-nav ml-auto',
+                        'menu_class' => 'navbar-nav ms-auto',
                         'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                         'walker' => new WP_Bootstrap_Navwalker(),
                     ));
@@ -90,6 +90,14 @@
         </nav><!-- .navbar -->
 
     </header><!-- End Header -->
+
+    <!-- Vendor JS Files -->
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 
     <?php wp_footer(); ?>
 </body>
